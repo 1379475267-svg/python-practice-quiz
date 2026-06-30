@@ -1,5 +1,8 @@
 # Python 练习题刷题网页
 
+在线访问：
+[Python 练习题刷题网页](https://1379475267-svg.github.io/python-practice-quiz/)
+
 这是根据 `python练习题.pdf` 制作的纯静态刷题网页。
 
 ## 本地打开
