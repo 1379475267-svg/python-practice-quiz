@@ -94,9 +94,8 @@ window.QUESTION_BANK = [
     "number": 6,
     "section": "单项选择题",
     "type": "single_choice",
-    "stem": "以下程序的运行结果为（ ）。 B=\"Qufu Normal University\" s1,s2,s3=",
+    "stem": "以下程序的运行结果为（　）。",
     "options": [
-      "B.split( ) print(s2)",
       "A.Qufu Normal University",
       "B.Qufu",
       "C.Normal",
@@ -106,7 +105,8 @@ window.QUESTION_BANK = [
       "C"
     ],
     "answerText": "C",
-    "explanation": "答案来自 PDF 题干括号中的标准答案。"
+    "explanation": "split() 按空格将字符串分成 Qufu、Normal、University，s2 是第二个单词 Normal。",
+    "code": "B=\"Qufu Normal University\"\ns1,s2,s3=B.split( )\nprint(s2)"
   },
   {
     "id": "mc-7",

@@ -151,6 +151,7 @@ function render() {
           ${isObjective(q) ? "" : `<span class="pill">自评题</span>`}
         </div>
         <div class="stem">${escapeHtml(q.stem)}</div>
+        ${q.code && q.type !== "code_fill" && q.type !== "open_code" ? `<pre>${escapeHtml(q.code)}</pre>` : ""}
         ${renderInputs(q)}
         ${feedback(q)}
       </article>`;
