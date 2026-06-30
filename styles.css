@@ -321,6 +321,13 @@ pre {
   display: none;
 }
 
+.site-footer {
+  padding: 0 clamp(18px, 4vw, 56px) 32px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
 @media (max-width: 860px) {
   .topbar,
   .layout {
