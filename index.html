@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python 练习题刷题网页</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Python Practice</p>
+        <h1>Python 练习题刷题</h1>
+      </div>
+      <div class="top-actions">
+        <button id="shuffleBtn" type="button">随机顺序</button>
+        <button id="resetBtn" type="button">重新开始</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="panel">
+        <div class="stat-card">
+          <span>题目数</span>
+          <strong id="totalCount">0</strong>
+        </div>
+        <div class="stat-card">
+          <span>已作答</span>
+          <strong id="answeredCount">0</strong>
+        </div>
+        <label class="field">
+          <span>题型筛选</span>
+          <select id="sectionFilter"></select>
+        </label>
+        <label class="field checkline">
+          <input id="onlyWrong" type="checkbox" />
+          <span>只看错题</span>
+        </label>
+        <button id="submitBtn" class="primary" type="button">提交判分</button>
+        <div id="resultBox" class="result hidden"></div>
+      </aside>
+
+      <section class="content">
+        <div class="toolbar">
+          <div>
+            <h2 id="viewTitle">全部题目</h2>
+            <p>选择、判断、填空和程序阅读自动判分；补全程序、简答和程序设计可按参考答案自评。</p>
+          </div>
+          <div class="progress">
+            <div id="progressFill"></div>
+          </div>
+        </div>
+        <div id="questionList" class="question-list"></div>
+        <section id="wrongPanel" class="wrong-panel hidden">
+          <h2>错题解析</h2>
+          <div id="wrongList"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
