@@ -153,14 +153,14 @@ window.QUESTION_BANK = [
     "options": [
       "A. C 盘根目录下",
       "B.D 盘根目录下",
-      "B. Python 安装目录下",
+      "C. Python 安装目录下",
       "D.与源文件相同的目录下"
     ],
     "answer": [
       "D"
     ],
     "answerText": "D",
-    "explanation": "答案来自 PDF 题干括号中的标准答案。"
+    "explanation": "题库答案为 D。相对路径文件通常会在程序当前工作目录下创建；在课堂习题口径中常按“与源文件相同目录”理解。"
   },
   {
     "id": "mc-10",
@@ -239,7 +239,7 @@ window.QUESTION_BANK = [
     "number": 14,
     "section": "单项选择题",
     "type": "single_choice",
-    "stem": "已知 x=[1,2,3]，执行语句 x.sppend([4])后，变量 x 的值为（ ）。",
+    "stem": "已知 x=[1,2,3]，执行语句 x.append([4]) 后，变量 x 的值为（　）。",
     "options": [
       "A.[1,2,3,[4]]",
       "B.[4]",
@@ -250,7 +250,7 @@ window.QUESTION_BANK = [
       "A"
     ],
     "answerText": "A",
-    "explanation": "答案来自 PDF 题干括号中的标准答案。"
+    "explanation": "append([4]) 会把整个列表 [4] 作为一个元素追加到末尾，所以结果为 [1,2,3,[4]]。PDF 中的 sppend 是拼写错误，已按 append 修正。"
   },
   {
     "id": "mc-15",
@@ -350,7 +350,7 @@ window.QUESTION_BANK = [
     "stem": "函数 plt.pie 绘制饼状图时用来设置添加百分比标签的参数是（ ）。",
     "options": [
       "A.explode",
-      "B.labes",
+      "B.labels",
       "C.autopct",
       "D.shadow"
     ],
@@ -358,7 +358,7 @@ window.QUESTION_BANK = [
       "C"
     ],
     "answerText": "C",
-    "explanation": "答案来自 PDF 题干括号中的标准答案。"
+    "explanation": "plt.pie() 中 autopct 用来显示百分比标签；labels 是标签文本参数。"
   },
   {
     "id": "mc-21",
@@ -376,7 +376,7 @@ window.QUESTION_BANK = [
       "B"
     ],
     "answerText": "B",
-    "explanation": "答案来自 PDF 题干括号中的标准答案。"
+    "explanation": "题库给出的答案为 B。但严格按 matplotlib.pyplot，plt.bar() 不用 orientation 控制方向，水平柱状图通常使用 plt.barh()。此题按题库口径保留答案 B。"
   },
   {
     "id": "tf-1",
@@ -906,12 +906,12 @@ window.QUESTION_BANK = [
     "number": 18,
     "section": "填空题",
     "type": "fill_blank",
-    "stem": "x=[3,5,7]，执行 x.sort(reverse=true) 后，x 的值为 ____。",
+    "stem": "x=[3,5,7]，执行 x.sort(reverse=True) 后，x 的值为 ____。",
     "answer": [
       "[7,5,3]"
     ],
     "answerText": "[7,5,3]",
-    "explanation": "答案依据 PDF 填空题原文整理。"
+    "explanation": "Python 布尔值应写作 True，不是 true。reverse=True 表示降序排序。"
   },
   {
     "id": "fill-19",
@@ -1052,10 +1052,10 @@ window.QUESTION_BANK = [
     "type": "fill_blank",
     "stem": "定义类时，不论类名是什么，构造方法都是 ____。",
     "answer": [
-      "_init_()"
+      "__init__()"
     ],
-    "answerText": "_init_()",
-    "explanation": "答案依据 PDF 填空题原文整理。"
+    "answerText": "__init__()",
+    "explanation": "Python 类的构造方法是 __init__()，前后各有两个下划线。PDF 中 _init_ 少写了下划线。"
   },
   {
     "id": "fill-31",
@@ -1064,10 +1064,10 @@ window.QUESTION_BANK = [
     "type": "fill_blank",
     "stem": "定义类时，不论类名是什么，析构方法都是 ____。",
     "answer": [
-      "_del_()"
+      "__del__()"
     ],
-    "answerText": "_del_()",
-    "explanation": "答案依据 PDF 填空题原文整理。"
+    "answerText": "__del__()",
+    "explanation": "Python 类的析构方法是 __del__()，前后各有两个下划线。PDF 中 _del_ 少写了下划线。"
   },
   {
     "id": "fill-32",
@@ -1100,10 +1100,10 @@ window.QUESTION_BANK = [
     "type": "fill_blank",
     "stem": "标准库 os 的函数 ____ 用来列出指定文件夹中的文件和子文件夹并返回列表。",
     "answer": [
-      "lisdir()"
+      "listdir()"
     ],
-    "answerText": "lisdir()",
-    "explanation": "答案依据 PDF 填空题原文整理。"
+    "answerText": "listdir()",
+    "explanation": "os.listdir() 用来列出指定目录下的文件和子目录名。PDF 中 lisdir() 是拼写错误。"
   },
   {
     "id": "fill-35",
@@ -1206,24 +1206,24 @@ window.QUESTION_BANK = [
     "number": 43,
     "section": "填空题",
     "type": "fill_blank",
-    "stem": "函数 plt.plot 使用参数 ____ 设置线条上的端点大小。",
+    "stem": "函数 plt.plot 使用参数 ____ 设置线条上标记点的大小。",
     "answer": [
-      "marksize"
+      "markersize"
     ],
-    "answerText": "marksize",
-    "explanation": "答案依据 PDF 填空题原文整理。"
+    "answerText": "markersize",
+    "explanation": "plt.plot() 中设置标记点大小的参数是 markersize，也可用简写 ms。PDF 中 marksize 少写了 er。"
   },
   {
     "id": "fill-44",
     "number": 44,
     "section": "填空题",
     "type": "fill_blank",
-    "stem": "函数 plt.plot 使用参数 ____ 设置线条上的端点大小。",
+    "stem": "函数 plt.plot 使用参数 ____ 设置线条在图例中的标签文字。",
     "answer": [
       "label"
     ],
     "answerText": "label",
-    "explanation": "答案依据 PDF 填空题原文整理。"
+    "explanation": "label 参数用于设置图例标签文字；端点大小应使用 markersize 或 ms。PDF 原文把 label 的作用写错了。"
   },
   {
     "id": "read-1",
@@ -1272,10 +1272,10 @@ window.QUESTION_BANK = [
     "stem": "阅读程序，填写运行结果。",
     "code": "def func(para=[ ]):\npara.append(3)\nreturn para\nfunc( )\nfunc( )\nprint(func( ))",
     "answer": [
-      "[[3,3,3]"
+      "[3,3,3]"
     ],
-    "answerText": "[[3,3,3]",
-    "explanation": "答案来自 PDF 中给出的程序运行结果。"
+    "answerText": "[3,3,3]",
+    "explanation": "默认参数列表只创建一次，三次调用会共用同一个列表，因此最终输出 [3,3,3]。PDF 原答案漏了右中括号。"
   },
   {
     "id": "read-5",
@@ -1309,12 +1309,12 @@ window.QUESTION_BANK = [
     "section": "程序阅读题",
     "type": "fill_blank",
     "stem": "阅读程序，填写运行结果。",
-    "code": "score,degree=100,'FEDCBA'\nindex=score-60//10\nif index >=0:\nresult=degree[index]\nelse:\nresult=degree[-1]\nprint(result)",
+    "code": "score,degree=100,'FEDCBA'\nindex=(score-60)//10\nif index >=0:\n    result=degree[index]\nelse:\n    result=degree[-1]\nprint(result)",
     "answer": [
       "B"
     ],
     "answerText": "B",
-    "explanation": "答案来自 PDF 中给出的程序运行结果。"
+    "explanation": "应先计算 (score-60)//10 得到等级下标 4，对应 degree[4] 为 B。PDF 中缺少括号会导致下标越界。"
   },
   {
     "id": "read-8",
@@ -1324,23 +1324,23 @@ window.QUESTION_BANK = [
     "stem": "阅读程序，填写运行结果。",
     "code": "a=15\nb=5\nif a>=15:\na=10\nelse:\nb=0\nprint('a=%d,b=%d'%(a,b))",
     "answer": [
-      "10 5"
+      "a=10,b=5"
     ],
-    "answerText": "10 5",
-    "explanation": "答案来自 PDF 中给出的程序运行结果。"
+    "answerText": "a=10,b=5",
+    "explanation": "a>=15 成立，所以 a 被赋值为 10，b 保持 5。print 格式化后输出 a=10,b=5。"
   },
   {
     "id": "read-9",
     "number": 9,
     "section": "程序阅读题",
     "type": "fill_blank",
-    "stem": "阅读程序，填写运行结果。",
-    "code": "s=input(\"输入两个整数（用空格间隔）：\")\nx1,x2=s.split( )\na=int(x1)\nb=int(x2)\nIf (a>b)\nt=a\na=b\nb=t\nprint(a,b)",
+    "stem": "阅读程序，若输入 5 3，填写运行结果。",
+    "code": "s=input(\"输入两个整数（用空格间隔）：\")\nx1,x2=s.split( )\na=int(x1)\nb=int(x2)\nif a>b:\n    t=a\n    a=b\n    b=t\nprint(a,b)",
     "answer": [
       "3 5"
     ],
     "answerText": "3 5",
-    "explanation": "答案来自 PDF 中给出的程序运行结果。"
+    "explanation": "输入 5 3 时 a>b 成立，交换后按从小到大输出 3 5。PDF 中 If 大写且缺少冒号，已修正为可运行代码。"
   },
   {
     "id": "read-10",
@@ -1361,12 +1361,12 @@ window.QUESTION_BANK = [
     "section": "程序阅读题",
     "type": "fill_blank",
     "stem": "阅读程序，填写运行结果。",
-    "code": "str1=\" \"\na=[1,2,3,4,5]\nfor k in a:\nstr1=str1+str(k)\nprint(str1)",
+    "code": "str1=\"\"\na=[1,2,3,4,5]\nfor k in a:\n    str1=str1+str(k)\nprint(str1)",
     "answer": [
       "12345"
     ],
     "answerText": "12345",
-    "explanation": "答案来自 PDF 中给出的程序运行结果。"
+    "explanation": "将列表中的每个数字转成字符串并依次拼接，输出 12345。PDF 原代码 str1=\" \" 会多一个前导空格，已按答案意图修正。"
   },
   {
     "id": "read-12",
@@ -1387,12 +1387,12 @@ window.QUESTION_BANK = [
     "section": "程序阅读题",
     "type": "fill_blank",
     "stem": "阅读程序，填写运行结果。",
-    "code": "for x in \"Qufu Normal University\":\nif x= ='N':\nbreak\nelse:\nprint(x,end=\" \")",
+    "code": "for x in \"Qufu Normal University\":\n    if x == 'N':\n        break\n    else:\n        print(x,end=\" \")",
     "answer": [
-      "Qufu"
+      "Q u f u"
     ],
-    "answerText": "Qufu",
-    "explanation": "答案来自 PDF 中给出的程序运行结果。"
+    "answerText": "Q u f u",
+    "explanation": "循环遇到 N 前停止；由于 print 使用 end=\" \"，字符之间会有空格。输入 Qufu 也会被判为等价。"
   },
   {
     "id": "read-14",
@@ -1400,12 +1400,12 @@ window.QUESTION_BANK = [
     "section": "程序阅读题",
     "type": "fill_blank",
     "stem": "阅读程序，填写运行结果。",
-    "code": "for x in range(3):\nfor t in \"Qufu Normal University\":\nif t= =\"N\":\nbreak\nprint(t,end=\" \")",
+    "code": "for x in range(3):\n    for t in \"Qufu Normal University\":\n        if t == \"N\":\n            break\n        print(t,end=\" \")",
     "answer": [
-      "Qufu Qufu Qufu"
+      "Q u f u Q u f u Q u f u"
     ],
-    "answerText": "Qufu Qufu Qufu",
-    "explanation": "答案来自 PDF 中给出的程序运行结果。"
+    "answerText": "Q u f u Q u f u Q u f u",
+    "explanation": "外层循环 3 次；每次内层循环遇到 N 前停止，并用空格分隔输出 Qufu 的各字符。输入 Qufu Qufu Qufu 也会被判为等价。"
   },
   {
     "id": "read-15",
