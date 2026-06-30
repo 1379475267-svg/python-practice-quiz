@@ -30,7 +30,7 @@ function userAnswer(q) {
 
 function answered(q) {
   const ans = userAnswer(q);
-  if (Array.isArray(ans)) return ans.every((part) => part.trim());
+  if (Array.isArray(ans)) return ans.length >= q.answer.length && ans.every((part) => part.trim());
   return Boolean(ans);
 }
 
