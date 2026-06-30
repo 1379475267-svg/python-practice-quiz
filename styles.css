@@ -63,6 +63,13 @@ h1 {
   letter-spacing: 0;
 }
 
+.author-line {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .top-actions {
   display: flex;
   gap: 10px;
